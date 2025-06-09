@@ -46,7 +46,6 @@ int main() {
     // Estado del programa
     Pantalla pantallaActual = MENU;
 
-    // Inicialización de juego (solo si se entra al juego)
     Tablero tablero(tamanoCasilla);
     Ficha* fichaSeleccionada = nullptr;
 
@@ -60,6 +59,8 @@ int main() {
         else if (pantallaActual == JUEGO) {
             tablero.dibujarTablero();
 
+
+                //Lógica para manejar las fichas. (Con el mouse)
                 if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
                     int col = GetMouseX() / tamanoCasilla;
                     int fila = GetMouseY() / tamanoCasilla;

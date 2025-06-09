@@ -24,7 +24,7 @@ void Ficha::dibujarFicha(int centroX, int centroY, int radio,int tamanoCasilla) 
     DrawTextureEx(textura, posicion, 0.0f, escala, WHITE);
 }
 
-//Verifica si la ficha no se mueve hacia atras. (Solo pasa si se transforma en dama).
+
 bool Ficha::movimientoFicha(int nuevaFila, int nuevaCol) {
     int deltaFila = nuevaFila - this->filaActual;
     int deltaCol = nuevaCol - this->colActual;
@@ -35,10 +35,10 @@ bool Ficha::movimientoFicha(int nuevaFila, int nuevaCol) {
     // Solo puede moverse 1 o 2 casillas (movimiento normal o captura)
     if (abs(deltaFila) != 1 && abs(deltaFila) != 2) return false;
 
-    // Jugador 1 solo puede subir (fila disminuye)
+    // Jugador 1 solo puede subir
     if (jugador == 1 && deltaFila >= 0) return false;
 
-    // Jugador 2 solo puede bajar (fila aumenta)
+    // Jugador 2 solo puede bajar 
     if (jugador == 2 && deltaFila <= 0) return false;
 
     return true;
@@ -48,6 +48,7 @@ bool Ficha::movimientoFicha(int nuevaFila, int nuevaCol) {
 //Getters y setters.
 void Ficha::setFila(int nuevaFila){this -> filaActual = nuevaFila;}
 void Ficha::setColumna(int nuevaColumna){this -> colActual = nuevaColumna;}
+
 void Ficha::setEsDama(bool nuevoEstado){
     this -> esDama = nuevoEstado;
 

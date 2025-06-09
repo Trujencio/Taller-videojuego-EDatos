@@ -1,4 +1,5 @@
 #include "Nodo.h"
+
 Nodo::Nodo(Ficha* ficha){
     this -> ficha = ficha;
     this -> sig = nullptr;
