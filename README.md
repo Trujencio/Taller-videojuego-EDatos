@@ -1,6 +1,9 @@
 Nombre: Lucas Trujillo
+
 Rut: 21.287.417-5
+
 Carrera: ICCI
+
 
 Taller de desarrollo de videojuego para la asignatura de Estructura de datos.
 
