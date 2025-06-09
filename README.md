@@ -3,9 +3,11 @@ Nombre: Lucas Trujillo
 Taller de desarrollo de videojuego para la asignatura de Estructura de datos.
 
 -IDEA
+
 La idea principal del videojuego está basada en el juego de mesa tradicional "damas", pero con la inclusión de habilidades especiales para las fichas cuando se transformen en damas y también una habilidad especial para cada bando despues de una cantidad de turnos (falta implementarlo).
 
 -INTERFAZ GRÁFICA:
+
 Para facilitarnos el uso de la interfaz gráfica el proyecto será creado con la ayuda de la libreria "Raylib".
 
 CLASES:
